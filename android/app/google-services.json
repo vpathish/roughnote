@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "201928741598",
+    "project_id": "roughnote-app",
+    "storage_bucket": "roughnote-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201928741598:android:abed549d3eeffc1e48284f",
+        "android_client_info": {
+          "package_name": "com.athi.roughnote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201928741598-108it214thslbksrg7lgnt4n978uremp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.athi.roughnote",
+            "certificate_hash": "b75d582b2b1d56b59f343625132a9a38e1d931dc"
+          }
+        },
+        {
+          "client_id": "201928741598-e77jo75dn1np09b6q5kd8ji115r7peil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.athi.roughnote",
+            "certificate_hash": "c8f8b0aa748f04721d87a526fc046bcafbe38ba6"
+          }
+        },
+        {
+          "client_id": "201928741598-v9a0cp9iqd4m6m9dfuem83kj0iapentr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.athi.roughnote",
+            "certificate_hash": "86574a9b3a969a98101d6e81180b9ba245214560"
+          }
+        },
+        {
+          "client_id": "201928741598-0cc8ib8vfujjfqlq2fv48e48bsub7amc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKBurwDk0Pgbf7w7Xpi-88vLUAJdV7uSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201928741598-0cc8ib8vfujjfqlq2fv48e48bsub7amc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
