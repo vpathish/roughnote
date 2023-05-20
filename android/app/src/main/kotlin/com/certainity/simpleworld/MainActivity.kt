@@ -1,4 +1,4 @@
-package com.athi.roughnote
+package com.certainity.simpleworld
 
 import io.flutter.embedding.android.FlutterActivity
 

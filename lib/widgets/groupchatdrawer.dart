@@ -7,11 +7,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:Roughnote/models/user.dart';
-import 'package:Roughnote/pages/activity_feed.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/progress.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/models/user.dart';
+import 'package:simpleworld/pages/activity_feed.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/progress.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 
 class DrawerMenu extends StatefulWidget {
   final String groupId;

@@ -1,11 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/_build_list.dart';
-import 'package:Roughnote/widgets/header.dart';
-import 'package:Roughnote/widgets/progress.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/_build_list.dart';
+import 'package:simpleworld/widgets/header.dart';
+import 'package:simpleworld/widgets/progress.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
 class Comments extends StatefulWidget {

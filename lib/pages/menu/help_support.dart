@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import "package:flutter/material.dart";
 import 'package:nb_utils/nb_utils.dart';
-import 'package:Roughnote/pages/menu/about_us.dart';
-import 'package:Roughnote/pages/menu/privacy_policy.dart';
-import 'package:Roughnote/pages/menu/term_of_use.dart';
-import 'package:Roughnote/widgets/header.dart';
-import 'package:Roughnote/widgets/progress.dart';
-import 'package:Roughnote/pages/webview/webview.dart';
+import 'package:simpleworld/pages/menu/about_us.dart';
+import 'package:simpleworld/pages/menu/privacy_policy.dart';
+import 'package:simpleworld/pages/menu/term_of_use.dart';
+import 'package:simpleworld/widgets/header.dart';
+import 'package:simpleworld/widgets/progress.dart';
+import 'package:simpleworld/pages/webview/webview.dart';
 
 
 class HelpSupportPage extends StatefulWidget {

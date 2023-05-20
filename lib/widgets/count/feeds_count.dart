@@ -1,10 +1,10 @@
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/_build_list.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/_build_list.dart';
 
 class FeedsCount extends StatefulWidget {
   final String? userId;
@@ -62,8 +62,10 @@ class FeedsCountState extends State<FeedsCount> {
                       : const Icon(IconlyLight.activity));
             } else {
               return Tab(
-                icon: Badge(
-                    badgeColor: const Color(0xFFC62828),
+                icon: badges.Badge(
+                    badgeStyle: const badges.BadgeStyle(
+                      badgeColor: Color(0xFFC62828),
+                    ),
                     badgeContent: Text(
                       snapshot.data!.size.toString(),
                       style: const TextStyle(color: Colors.white),

@@ -8,11 +8,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/header.dart';
-import 'package:Roughnote/widgets/progress.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/header.dart';
+import 'package:simpleworld/widgets/progress.dart';
 // ignore: library_prefixes
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 import 'package:uuid/uuid.dart';
 
 // ignore: must_be_immutable

@@ -12,13 +12,13 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:Roughnote/config/size_config.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/full_image_widget.dart';
-import 'package:Roughnote/widgets/chat_appbar.dart';
-import 'package:Roughnote/widgets/progress.dart';
+import 'package:simpleworld/config/size_config.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/full_image_widget.dart';
+import 'package:simpleworld/widgets/chat_appbar.dart';
+import 'package:simpleworld/widgets/progress.dart';
 import 'package:intl/intl.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 
 class Chat extends StatelessWidget {
   final String receiverId;

@@ -3,12 +3,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:Roughnote/constant/constant.dart';
-import 'package:Roughnote/models/user.dart';
-import 'package:Roughnote/widgets/bezier_container.dart';
-import 'package:Roughnote/widgets/bezier_containernew.dart';
-import 'package:Roughnote/widgets/progress.dart';
-import 'package:Roughnote/widgets/simple_World_Widgets.dart';
+import 'package:simpleworld/constant/constant.dart';
+import 'package:simpleworld/models/user.dart';
+import 'package:simpleworld/widgets/bezier_container.dart';
+import 'package:simpleworld/widgets/bezier_containernew.dart';
+import 'package:simpleworld/widgets/progress.dart';
+import 'package:simpleworld/widgets/simple_World_Widgets.dart';
 
 class SplashScreen extends StatefulWidget {
   final String? userId;
@@ -102,7 +102,7 @@ class SplashScreenState extends State<SplashScreen>
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-        text: 'Roughnote',
+        text: 'Simple World',
         style: GoogleFonts.portLligatSans(
           textStyle: Theme.of(context).textTheme.headline4,
           fontSize: 30,

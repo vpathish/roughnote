@@ -8,15 +8,11 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="com.android.vending.BILLING" />
-    
+
    <application
         android:label="Roughnote"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"
-        android:allowBackup="false"
-        android:fullBackupContent="false"
-        android:requestLegacyExternalStorage="true"
-        android:usesCleartextTraffic="true"  >
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -43,7 +39,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        
+
         <meta-data
         android:name="com.google.firebase.messaging.default_notification_channel_id"
         android:value="@string/default_notification_channel_id" />
@@ -52,6 +48,5 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-5132780917564352~2438245901"/>
-
     </application>
 </manifest>

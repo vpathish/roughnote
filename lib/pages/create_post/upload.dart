@@ -10,11 +10,11 @@ import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:Roughnote/models/user.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/progress.dart';
+import 'package:simpleworld/models/user.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/progress.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:uuid/uuid.dart';
 

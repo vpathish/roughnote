@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Roughnote/story/simpleworld_stories.dart';
+import 'package:simpleworld/story/simpleworld_stories.dart';
 
 class StoryList extends StatefulWidget {
   const StoryList({Key? key}) : super(key: key);

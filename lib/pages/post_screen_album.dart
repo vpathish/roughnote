@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/album_posts.dart';
-import 'package:Roughnote/widgets/header.dart';
-import 'package:Roughnote/widgets/progress.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/album_posts.dart';
+import 'package:simpleworld/widgets/header.dart';
+import 'package:simpleworld/widgets/progress.dart';
 
 class PostScreenAlbum extends StatelessWidget {
   final String? userId;

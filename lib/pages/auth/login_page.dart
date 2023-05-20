@@ -1,7 +1,6 @@
-// ignore_for_file: unused_element
+// ignore_for_file: unused_element, unnecessary_null_comparison, unused_local_variable
 
 import 'dart:convert';
-import 'dart:io';
 import 'dart:math';
 
 import 'package:adaptive_theme/adaptive_theme.dart';
@@ -15,21 +14,20 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
-import 'package:Roughnote/models/user.dart';
-import 'package:Roughnote/pages/auth/add_credit_to_account.dart';
-import 'package:Roughnote/pages/auth/create_account.dart';
-import 'package:Roughnote/pages/auth/forgotpass.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/pages/auth/signup_page.dart';
-import 'package:Roughnote/pages/menu/term_of_use.dart';
-import 'package:Roughnote/share_preference/preferences_key.dart';
-import 'package:Roughnote/widgets/bezier_container.dart';
+import 'package:simpleworld/models/user.dart';
+import 'package:simpleworld/pages/auth/create_account.dart';
+import 'package:simpleworld/pages/auth/forgotpass.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/pages/auth/signup_page.dart';
+import 'package:simpleworld/pages/menu/term_of_use.dart';
+import 'package:simpleworld/share_preference/preferences_key.dart';
+import 'package:simpleworld/widgets/bezier_container.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:Roughnote/widgets/language_picker_widget_home.dart';
-import 'package:Roughnote/widgets/progress.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
-import 'package:Roughnote/pages/webview/webview.dart';
+import 'package:simpleworld/widgets/language_picker_widget_home.dart';
+import 'package:simpleworld/widgets/progress.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/pages/webview/webview.dart';
 
 
 GloabalUser? currentUser;

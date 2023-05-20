@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import 'package:Roughnote/widgets/header.dart';
-import 'package:Roughnote/widgets/progress.dart';
+import 'package:simpleworld/widgets/header.dart';
+import 'package:simpleworld/widgets/progress.dart';
 
 class TermofUsePage extends StatefulWidget {
   final String? currentUserId;

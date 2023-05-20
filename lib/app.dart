@@ -9,14 +9,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:Roughnote/config/palette.dart';
-import 'package:Roughnote/l10n/l10n.dart';
-import 'package:Roughnote/pages/WalkThroughScreen.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/pages/auth/login_page.dart';
-import 'package:Roughnote/provider/locale_provider.dart';
-import 'package:Roughnote/share_preference/preferences_key.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/config/palette.dart';
+import 'package:simpleworld/l10n/l10n.dart';
+import 'package:simpleworld/pages/WalkThroughScreen.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/pages/auth/login_page.dart';
+import 'package:simpleworld/provider/locale_provider.dart';
+import 'package:simpleworld/share_preference/preferences_key.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class App extends StatefulWidget {
@@ -82,7 +82,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
                   size: 24,
                 ),
                 systemOverlayStyle: SystemUiOverlayStyle.dark,
-                brightness: Brightness.dark,
+                // brightness: Brightness.dark,
               ),
               tabBarTheme: const TabBarTheme(
                 labelColor: Palette.tabbarlabelColor,
@@ -118,7 +118,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
               iconTheme:
                   IconThemeData(color: Palette.appbariconcolordark, size: 24),
               systemOverlayStyle: SystemUiOverlayStyle.light,
-              brightness: Brightness.light,
+              // brightness: Brightness.light,
             ),
             tabBarTheme: const TabBarTheme(
               labelColor: Palette.tabbarlabelColordark,
@@ -142,7 +142,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
           ),
           initial: widget.savedThemeMode ?? AdaptiveThemeMode.light,
           builder: (theme, darkTheme) => MaterialApp(
-            title: 'Roughnote',
+            title: 'Simple World',
             theme: theme,
             darkTheme: darkTheme,
             debugShowCheckedModeBanner: false,

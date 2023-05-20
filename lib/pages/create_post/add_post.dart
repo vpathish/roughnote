@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_print
+// ignore_for_file: avoid_print, unnecessary_null_comparison
 
 import 'dart:async';
 import 'dart:io';
@@ -11,16 +11,15 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:giphy_get/giphy_get.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:Roughnote/models/user.dart';
-import 'package:Roughnote/pages/comming_soon_page.dart';
-import 'package:Roughnote/pages/create_post/gif_upload.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/pages/auth/login_page.dart';
-import 'package:Roughnote/pages/create_post/pdf_upload.dart';
-import 'package:Roughnote/pages/create_post/upload.dart';
+import 'package:simpleworld/models/user.dart';
+import 'package:simpleworld/pages/comming_soon_page.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/pages/auth/login_page.dart';
+import 'package:simpleworld/pages/create_post/pdf_upload.dart';
+import 'package:simpleworld/pages/create_post/upload.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:Roughnote/pages/create_post/video_upload.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/pages/create_post/video_upload.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 import 'package:uuid/uuid.dart';
 import 'package:video_compress/video_compress.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

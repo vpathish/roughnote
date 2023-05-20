@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:paginate_firestore/bloc/pagination_listeners.dart';
-import 'package:paginate_firestore/paginate_firestore.dart';
+import 'package:simpleworld/paginate_firestore/bloc/pagination_listeners.dart';
+import 'package:simpleworld/paginate_firestore/paginate_firestore.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/header.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
-import 'package:Roughnote/widgets/visited_users_tile.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/header.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/widgets/visited_users_tile.dart';
 
 class UsersViewedMyProfileList extends StatefulWidget {
   final String userId;

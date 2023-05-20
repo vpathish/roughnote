@@ -5,9 +5,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:Roughnote/constant/constant.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
-import 'package:Roughnote/widgets/splashscreen.dart';
+import 'package:simpleworld/constant/constant.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/widgets/splashscreen.dart';
 import 'app.dart';
 
 Future<void> main() async {

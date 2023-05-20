@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
-import 'package:Roughnote/l10n/l10n.dart';
-import 'package:Roughnote/provider/locale_provider.dart';
+import 'package:simpleworld/l10n/l10n.dart';
+import 'package:simpleworld/provider/locale_provider.dart';
 
 class LanguageWidget extends StatelessWidget {
   @override

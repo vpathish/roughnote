@@ -34,11 +34,13 @@ class _WebViewContainerState extends State<WebViewContainer> {
         ),
         body: Column(
           children: [
-            Expanded(
-                child: WebView(
-                    key: _key,
-                    javascriptMode: JavascriptMode.unrestricted,
-                    initialUrl: _url)),
+            // Expanded(
+            // child:
+            // WebView(
+            //     key: _key,
+            //     javascriptMode: JavascriptMode.unrestricted,
+            //     initialUrl: _url)
+            // ),
           ],
         ));
   }

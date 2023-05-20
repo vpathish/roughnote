@@ -1,11 +1,11 @@
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:Roughnote/pages/chat/simpleworld_chat_main.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/circle_button.dart';
+import 'package:simpleworld/pages/chat/simpleworld_chat_main.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/circle_button.dart';
 
 class MessagesCount extends StatefulWidget {
   final String? currentUserId;
@@ -57,13 +57,14 @@ class MessagesState extends State<MessagesCount> {
             sum += (int.parse(ds[i]['badge']));
           }
           if (sum > 0) {
-            return Badge(
-              position: BadgePosition.topEnd(top: 0, end: 3),
-              animationDuration: const Duration(milliseconds: 300),
-              animationType: BadgeAnimationType.slide,
+            return badges.Badge(
+              position: badges.BadgePosition.topEnd(top: 0, end: 3),
               badgeContent: Text(
                 '$sum',
                 style: const TextStyle(color: Colors.white),
+              ),
+              badgeAnimation: const badges.BadgeAnimation.slide(
+                animationDuration: Duration(milliseconds: 300),
               ),
               child: CircleButton(
                 icon: MdiIcons.facebookMessenger,

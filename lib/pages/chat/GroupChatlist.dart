@@ -1,11 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:Roughnote/pages/chat/search_page.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/services/database_service.dart';
-import 'package:Roughnote/widgets/group_tile.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/pages/chat/search_page.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/services/database_service.dart';
+import 'package:simpleworld/widgets/group_tile.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 
 class GroupChatList extends StatefulWidget {
   final String? userId;

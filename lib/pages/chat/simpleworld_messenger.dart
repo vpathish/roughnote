@@ -1,11 +1,11 @@
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:Roughnote/pages/chat/simpleworld_chat.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/pages/chat/simpleworld_chat.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 import 'package:timeago/timeago.dart';
 
 class Messenger extends StatefulWidget {
@@ -150,10 +150,12 @@ class _MessengerState extends State<Messenger> {
                 )),
                 locale: 'en_short')),
             int.parse(messenger[index]['badge']) > 0
-                ? Badge(
-                    elevation: 0,
-                    shape: BadgeShape.circle,
-                    padding: const EdgeInsets.all(7),
+                ? badges.Badge(
+                    badgeStyle: const badges.BadgeStyle(
+                      shape: badges.BadgeShape.circle,
+                      padding: EdgeInsets.all(7),
+                      elevation: 0,
+                    ),
                     badgeContent: Text(
                       messenger[index]['badge'],
                       style: const TextStyle(color: Colors.white),

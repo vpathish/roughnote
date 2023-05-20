@@ -9,14 +9,14 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:Roughnote/pages/home.dart';
-import 'package:Roughnote/pages/auth/login_page.dart';
-import 'package:Roughnote/story/add_image_story.dart';
-import 'package:Roughnote/story/add_video_story.dart';
-import 'package:Roughnote/widgets/progress.dart';
+import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/pages/auth/login_page.dart';
+import 'package:simpleworld/story/add_image_story.dart';
+import 'package:simpleworld/story/add_video_story.dart';
+import 'package:simpleworld/widgets/progress.dart';
 // ignore: library_prefixes
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:Roughnote/widgets/simple_world_widgets.dart';
+import 'package:simpleworld/widgets/simple_world_widgets.dart';
 import 'package:uuid/uuid.dart';
 import 'package:video_compress/video_compress.dart';
 
