@@ -14,29 +14,29 @@
       },
       "oauth_client": [
         {
-          "client_id": "201928741598-108it214thslbksrg7lgnt4n978uremp.apps.googleusercontent.com",
+          "client_id": "201928741598-ain015bikqijv2pp47qkeglhg5g7jrto.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.athi.roughnote",
-            "certificate_hash": "b75d582b2b1d56b59f343625132a9a38e1d931dc"
+            "certificate_hash": "f4ac08aef053ef63b9ab76a2280275c41e3afc93"
           }
         },
         {
-          "client_id": "201928741598-e77jo75dn1np09b6q5kd8ji115r7peil.apps.googleusercontent.com",
+          "client_id": "201928741598-c0552rok8tc86hg5rn0u212k0m5orqpt.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.athi.roughnote",
-            "certificate_hash": "c8f8b0aa748f04721d87a526fc046bcafbe38ba6"
-      }
-    },
-    {
-          "client_id": "201928741598-v9a0cp9iqd4m6m9dfuem83kj0iapentr.apps.googleusercontent.com",
+            "certificate_hash": "6f29f798f4061d803f40a41281fdea02cb237bc9"
+          }
+        },
+        {
+          "client_id": "201928741598-o7s3oaf0kgi6a84c0nnt5grajsqd4q4v.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.athi.roughnote",
             "certificate_hash": "86574a9b3a969a98101d6e81180b9ba245214560"
-        }
-      },
+          }
+        },
         {
           "client_id": "201928741598-0cc8ib8vfujjfqlq2fv48e48bsub7amc.apps.googleusercontent.com",
           "client_type": 3

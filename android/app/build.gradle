@@ -49,7 +49,6 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.athi.roughnote"
         minSdkVersion 21
         targetSdkVersion 33
@@ -59,10 +58,10 @@ android {
 
     signingConfigs {
         release {
-            keyAlias keystoreProperties['roughnote_android']
-            keyPassword keystoreProperties['Athisam#1']
-            storePassword keystoreProperties['Athisam#1']
-            storeFile file("Google_Play_Keystore.jks")
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storePassword keystoreProperties['storePassword']
+            storeFile file("uploadkey.jks")
         }
     }
 

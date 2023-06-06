@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.athi.roughnote">
+    package="com.certainity.simpleworld">
 
     <uses-permission android:name = "android.permission.INTERNET permission "/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -11,7 +11,7 @@
 
    <application
         android:label="Roughnote"
-        android:name="${applicationName}"
+        android:name="Roughnote"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
