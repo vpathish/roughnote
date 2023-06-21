@@ -1,5 +1,6 @@
 // import 'package:socialoo/global/global.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -16,6 +17,7 @@ class _WebViewContainerState extends State<WebViewContainer> {
   var _url;
   final _key = UniqueKey();
   var scaffoldKey = GlobalKey<ScaffoldState>();
+  InAppWebViewController? webViewController;
 
   _WebViewContainerState(this._url);
 
@@ -34,13 +36,13 @@ class _WebViewContainerState extends State<WebViewContainer> {
         ),
         body: Column(
           children: [
-            // Expanded(
-            // child:
-            // WebView(
-            //     key: _key,
-            //     javascriptMode: JavascriptMode.unrestricted,
-            //     initialUrl: _url)
-            // ),
+            Expanded(
+                child: InAppWebView(
+              initialUrlRequest: URLRequest(url: Uri.parse(_url)),
+              onWebViewCreated: (controller) {
+                webViewController = controller;
+              },
+            )),
           ],
         ));
   }
