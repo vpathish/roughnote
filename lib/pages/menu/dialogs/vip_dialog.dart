@@ -4,7 +4,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
+import 'package:nb_utils/nb_utils.dart';
 import 'package:simpleworld/pages/home.dart';
+import 'package:simpleworld/pages/menu/dialogs/store_products.dart';
 import 'package:simpleworld/widgets/simple_world_widgets.dart';
 
 class VipDialog extends StatelessWidget {
@@ -233,7 +235,63 @@ class VipDialog extends StatelessWidget {
                   const SizedBox(height: 15)
                 ],
               ),
-            )
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Row(
+                  children: [
+                    Text('You have',
+                        style: TextStyle(
+                          fontSize: 14,
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                      child: Text(credits.toString(),
+                          style: TextStyle(
+                            fontSize: 14,
+                          )),
+                    ),
+                    Text('Credits',
+                        style: TextStyle(
+                          fontSize: 14,
+                        )),
+                  ],
+                ),
+                const SizedBox(width: 10),
+                Container(
+                  margin: const EdgeInsets.only(top: 10.0),
+                  height: 38,
+                  width: (context.width() - (3 * 16)) * 0.4,
+                  decoration: const BoxDecoration(
+                    color: Color(0xffE5E6EB),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(5.0),
+                    ),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Buy Credits',
+                      textAlign: TextAlign.left,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 16,
+                        letterSpacing: 0.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ).onTap(() {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Upgrade(),
+                    ),
+                  );
+                }),
+              ],
+            ),
+            SizedBox(height: 30)
           ],
         ),
       ),

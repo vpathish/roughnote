@@ -9,7 +9,7 @@ header(context,
   return AppBar(
     toolbarHeight: 50,
     iconTheme: IconThemeData(
-      color: Theme.of(context).appBarTheme.iconTheme!.color,
+      color: Theme.of(context).iconTheme.color,
     ),
     automaticallyImplyLeading: removeBackButton ? false : true,
     title: Text(

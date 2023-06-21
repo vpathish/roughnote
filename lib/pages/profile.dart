@@ -893,105 +893,50 @@ class _ProfileState extends State<Profile> {
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Row(
-                      children: [
-                        Text(AppLocalizations.of(context)!.you_have,
-                            style: Theme.of(context)
-                                .textTheme
-                                .headline6!
-                                .copyWith(fontSize: 14)),
-                        Text(user.credit_points.toString(),
-                            style: Theme.of(context)
-                                .textTheme
-                                .headline6!
-                                .copyWith(fontSize: 14)),
-                        Text(AppLocalizations.of(context)!.credits,
-                            style: Theme.of(context)
-                                .textTheme
-                                .headline6!
-                                .copyWith(fontSize: 14)),
-                      ],
-                    ),
+                    buildProfileButton(),
                     const SizedBox(width: 10),
-                    Container(
-                      margin: const EdgeInsets.only(top: 10.0),
-                      height: 38,
-                      width: (context.width() - (3 * 16)) * 0.4,
-                      decoration: const BoxDecoration(
-                        color: Color(0xffE5E6EB),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(5.0),
-                        ),
+                    if (!isProfileOwner)
+                      Row(
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.only(top: 10.0),
+                            height: 38,
+                            width: (context.width() - (3 * 16)) * 0.4,
+                            decoration: const BoxDecoration(
+                              color: Color(0xffE5E6EB),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(5.0),
+                              ),
+                            ),
+                            child: Center(
+                              child: Text(
+                                AppLocalizations.of(context)!.message,
+                                textAlign: TextAlign.left,
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 16,
+                                  letterSpacing: 0.0,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ),
+                          ).onTap(() {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Chat(
+                                  receiverId: user.id,
+                                  receiverAvatar: user.photoUrl,
+                                  receiverName: user.username,
+                                  key: null,
+                                ),
+                              ),
+                            );
+                          }),
+                        ],
                       ),
-                      child: Center(
-                        child: Text(
-                          AppLocalizations.of(context)!.buy_credits,
-                          textAlign: TextAlign.left,
-                          style: const TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 16,
-                            letterSpacing: 0.0,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ),
-                    ).onTap(() {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Upgrade(),
-                        ),
-                      );
-                    }),
                   ],
                 ),
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  buildProfileButton(),
-                  const SizedBox(width: 10),
-                  if (!isProfileOwner)
-                    Row(
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.only(top: 10.0),
-                          height: 38,
-                          width: (context.width() - (3 * 16)) * 0.4,
-                          decoration: const BoxDecoration(
-                            color: Color(0xffE5E6EB),
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(5.0),
-                            ),
-                          ),
-                          child: Center(
-                            child: Text(
-                              AppLocalizations.of(context)!.message,
-                              textAlign: TextAlign.left,
-                              style: const TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 16,
-                                letterSpacing: 0.0,
-                                color: Colors.black,
-                              ),
-                            ),
-                          ),
-                        ).onTap(() {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => Chat(
-                                receiverId: user.id,
-                                receiverAvatar: user.photoUrl,
-                                receiverName: user.username,
-                                key: null,
-                              ),
-                            ),
-                          );
-                        }),
-                      ],
-                    ),
-                ],
-              ),
               const SizedBox(height: 20),
               const Divider(),
               Padding(

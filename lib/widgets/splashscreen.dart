@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:typed_data';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,8 +13,8 @@ import 'package:simpleworld/widgets/simple_World_Widgets.dart';
 
 class SplashScreen extends StatefulWidget {
   final String? userId;
-
-  const SplashScreen({Key? key, this.userId}) : super(key: key);
+  final Uint8List splashBytes;
+  const SplashScreen({Key? key, this.userId, required this.splashBytes}) : super(key: key);
   @override
   SplashScreenState createState() => SplashScreenState();
 }
@@ -136,43 +137,49 @@ class SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         body: SizedBox(
           height: height,
-          child: Stack(
-            children: <Widget>[
-              Positioned(
-                top: -MediaQuery.of(context).size.height * .15,
-                right: -MediaQuery.of(context).size.width * .4,
-                child: const BezierContainer(),
-              ),
-              Positioned(
-                bottom: -MediaQuery.of(context).size.height * .15,
-                left: -MediaQuery.of(context).size.width * .4,
-                child: const BezierContainernew(),
-              ),
-              Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      _title(),
-                      _logoWidget(),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      // Username(),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
+          width: width,
+          child: Image.memory(
+            widget.splashBytes,
+            gaplessPlayback: true,
+             fit: BoxFit.cover),
+          // Stack(
+          //   children: <Widget>[
+          //     Positioned(
+          //       top: -MediaQuery.of(context).size.height * .15,
+          //       right: -MediaQuery.of(context).size.width * .4,
+          //       child: const BezierContainer(),
+          //     ),
+          //     Positioned(
+          //       bottom: -MediaQuery.of(context).size.height * .15,
+          //       left: -MediaQuery.of(context).size.width * .4,
+          //       child: const BezierContainernew(),
+          //     ),
+          //     Container(
+          //       alignment: Alignment.center,
+          //       padding: const EdgeInsets.symmetric(horizontal: 20),
+          //       child: SingleChildScrollView(
+          //         child: Column(
+          //           crossAxisAlignment: CrossAxisAlignment.center,
+          //           mainAxisAlignment: MainAxisAlignment.center,
+          //           children: <Widget>[
+          //             _title(),
+          //             _logoWidget(),
+          //             const SizedBox(
+          //               height: 20,
+          //             ),
+          //             // Username(),
+          //           ],
+          //         ),
+          //       ),
+          //     ),
+          //   ],
+          // ),
         ),
       ),
     );
