@@ -102,7 +102,7 @@ class SplashScreenState extends State<SplashScreen>
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-        text: 'Simple World',
+        text: 'Roughnote',
         style: GoogleFonts.portLligatSans(
           textStyle: Theme.of(context).textTheme.headline4,
           fontSize: 30,

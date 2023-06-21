@@ -11,7 +11,7 @@
 
    <application
         android:label="Roughnote"
-        android:name="Roughnote"
+        android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

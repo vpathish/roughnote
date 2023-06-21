@@ -142,7 +142,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
           ),
           initial: widget.savedThemeMode ?? AdaptiveThemeMode.light,
           builder: (theme, darkTheme) => MaterialApp(
-            title: 'Simple World',
+            title: 'Roughnote',
             theme: theme,
             darkTheme: darkTheme,
             debugShowCheckedModeBanner: false,
